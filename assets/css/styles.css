@@ -1,0 +1,278 @@
+:root{
+    --main-color: #4050A5;
+}
+
+/* Header Styles */
+
+.header {
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.header__title{
+    color: white;
+}
+
+/* Section Styles */
+
+.section{
+    display: flex;
+    align-items: center;
+}
+
+.section__form{
+    position: relative;
+    width: 50%;
+    padding: 10px;
+}
+
+
+
+.section__form-image{
+    position: absolute;
+    left: calc(50% - 75px);
+    bottom: -160px;
+    margin-top: 10px;
+}
+
+.section__hero-image{
+    width: 500px;
+    height: 500px;
+}
+
+.section__placeholder{
+    margin: auto;
+    width: 50%;
+    font-weight: 600;
+    font-size: var(--h2-font-size);
+    display: block;
+    text-align: center;
+}
+
+.section__input{
+    position: relative;
+}
+
+.section__input{
+    display: block;
+    outline: none;
+    padding: 10px;
+    border: solid var(--main-color);
+    border-radius: 5px;
+    width: 100%;
+    color: black;
+    width: 50%;
+    margin: 30px auto 0;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.section__input-text{
+    outline: white;
+    overflow: scroll;
+    border: none;
+    width: 90%;
+    color: black;
+    font-weight: 900;
+}
+.section__input-text::placeholder{
+    color: black;
+    font-weight: 600;
+}
+
+
+.section__ico{
+    cursor: pointer;
+    transition: .2s;
+}
+
+.section__ico:hover{
+    color: var(--main-color)
+}
+
+.frases-modificadas__title{
+    text-align: center;
+}
+
+.frases-modificadas{
+    padding: 0 200px 30px;
+}
+
+.frases-modificadas__phrases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.frases-modificadas__phrase{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-right: 30px;
+    margin-top: 30px;
+    height: 400px;
+    width: calc(50% - 30px);
+}
+
+.frases-modificadas__typeof{
+    padding: 30px;
+    margin: 0;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+}
+.frases-modificadas__paragraph{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.frases-modificadas__text{
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    overflow-y: scroll;
+    margin: auto;
+    font-size: var(--p-font-size);
+}
+
+.frases-modificadas__ico{
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: var(--p-font-size);
+    transition: .3s;
+}
+
+.frases-modificadas__ico:hover{
+    color: var(--main-color);
+}
+
+.footer{
+    padding: 20px;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+.footer__text{
+    text-align: center;
+    color: white;
+}
+
+.footer__link{
+    color: white;
+    text-decoration: underline white;
+    transition: .3s;
+}
+
+.footer__link:hover{
+    background-color: white;
+    color: var(--main-color);
+    padding: 10px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1000px){
+    .section__form-image{
+        display: none;
+    }
+    .frases-modificadas__text{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .header__headline{
+        display: block;
+        font-weight: 600;
+        font-size: var(--h2-font-size);
+        margin-top: 10px;
+    }
+    .section__hero-image{
+        display: none;
+    }
+
+    .section__form{
+        width: 100%;
+    }
+    .section__placeholder{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .section__input{
+        border: none;
+        width: 100%;
+    }
+
+    .section__input-text{
+        width: 100%;
+        text-align: center;
+        border: solid var(--main-color) 3px;
+        border-radius: 5px;
+        font-size: var(--h3-font-size);
+        padding: 10px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+
+    .section__ico{
+        display: block;
+        text-align: center;
+        font-size: var(--h3-font-size);
+        padding: 20px;
+        color: white;
+        width: 50%;
+        border-radius: 5px;
+        margin: 20px auto;
+        background-color: var(--main-color);
+    }
+
+    .section__ico:hover{
+        color: black;
+    }
+
+    .frases-modificadas{
+        padding: 10px;
+    }
+
+    .frases-modificadas__phrase{
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+/* Code for javascript */
+
+#unicode{
+    overflow-x: scroll;
+}
+
+#element-copied{
+    background-color: #1C2761;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: -200px;
+    opacity: .8;
+    left: 35%;
+    text-align: center;
+    transition: .3s;
+}
+
+@media screen and (max-width: 600px){
+    #element-copied{
+        left: 0;
+        margin: auto;
+    }
+}
+#element-copied.active{
+    bottom: 20px;
+    animation-name: fade-out;
+    animation-delay: 2s;
+}
+

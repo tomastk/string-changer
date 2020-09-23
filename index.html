@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StringChanger: cambia los textos como lo hace Javascript">
+    <title>StringChanger</title>
+    <link rel="shortcut icon" href="assets/img/code.png" type="image/x-icon">
+    <!--Font Family: Poppins-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Normalize.css-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/1cb27db85b.js" crossorigin="anonymous"></script>
+    <!--Own styles-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/init.css">
+    
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">StringChanger: <span class="header__headline">Cambia texto como JS</span></h1>
+    </header>
+    <section class="section">
+        <div class="section__form">
+            <label class="section__placeholder" for="text-write">Introduce el texto a modificar</label>
+            <div class="section__input">
+                <input class="section__input-text" type="text" name="text-write" placeholder="String de Ejemplo" id="text-write">
+                <a href="#modifeded-phrases"><i class="fas fa-paper-plane section__ico" id="text-ico"></i></a>
+            </div>
+            <img src="assets/img/code.png" alt="imagen de code" class="section__form-image">
+        </div>
+        <div>
+            <img src="assets/img/hero-image.svg" class="section__hero-image" alt="imagen del hero">
+        </div>
+    </section>
+
+    <div class="frases-modificadas" id="modifeded-phrases">
+        <h2 class="frases-modificadas__title">Ver texto modificado</h2>
+        <div class="frases-modificadas__phrases">
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">Número de caracteres</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="length">A gonzalo tomás le gusta la milanesa xdd</div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">Dado Vuelta</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="upside-down">A gonzalo tomás le gusta la milanesa xdd</div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">Sin la primer letra</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="no-first-letter">A gonzalo tomás le gusta la milanesa xdd</div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">Sin la última letra</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="no-last-letter">A gonzalo tomás le gusta la milanesa xdd</div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">Sin los espacios del final y del comienzo</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="no-white-spaces"></div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">En mayúsculas</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="uppercase"></div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">En minúsculas</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="lowercase"></div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">Capitalizado</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="capitalize"></div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">Dividido por guiones</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="separe-by-hyphen"></div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">Sin la última ni la primera letra</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="no-last-first-letter"></div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+            <div class="frases-modificadas__phrase">
+                <h3 class="frases-modificadas__typeof">Código unicode</h3>
+                <div class="frases-modificadas__paragraph">
+                    <div class="frases-modificadas__text" id="unicode"></div>
+                    <i class="far fa-clone frases-modificadas__ico copy-button"></i>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="element-copied">
+        <h3>Texto copiado correctamente</h3>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__text">
+            TomasTK &copy; 2020
+        </p>
+        <a href="https://github.com/tomastk" class="footer__link" target="_blank">Visitar mi github</a>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
